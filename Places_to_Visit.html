@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Places to Visit</title>
+	<link rel="stylesheet" type="text/css" href="css/Places.css">
+	<link rel="stylesheet" type="text/css" href="css/imageslider.css">
+</head>
+<body>
+	<div class="head">
+	<h1>PLACES TO VISIT</h1>
+	</div>
+	<!-- <div class="container">
+	<form action="/action_page.php" method="get">
+	  <input class="city" list="cities" name="city_select" placeholder=" Select a city" onchange="location = this.label;">
+  		<datalist id="cities">
+    	<option value="Jaipur" , label = "jaipur.html">jaipur</option>
+    	<option value="Udaipur">abc</option>
+    	<option value="Jaisalmer">abc</option>
+    	<option value="Jodhpur">abc</option>
+    	<option value="Ajmer">abc</option>
+  		</datalist>
+  		<input class="submit" type="submit" onclick="SelectCity()">
+		 <?php
+		$selected=$_POST['city_select']	;
+		echo $selected
+		?>
+		<script>
+		function SelectCity()
+		window.open("www.google.com");
+		</script>
+		</form>
+		
+	</div>
+ -->
+ 
+ <div class="select_form">
+ <div>
+ <select id="select_val">
+  <option value="jaipur.html">Jaipur</option>
+  <option value="jaisalmer">Jaisalmer</option>
+  <option value="Ajmer">Ajmer</option>
+  <option value="Jodhpur">Jodhpur</option>
+</select>
+<button id="submit">SUBMIT</button>
+</div>
+</div>
+
+<script>
+
+document.getElementById("submit").addEventListener("click" , function(){
+
+		e = document.getElementById("select_val");
+
+	
+		window.location.replace(e.options[e.selectedIndex].value);
+
+});
+
+
+
+
+</script> 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial;
+}
+
+.header {
+    text-align: center;
+    padding: 32px;
+}
+
+
+
+
+	#select_val{
+	height: 40px;
+	width: 45vw;
+	border-radius: 2px;
+	}
+
+	#submit{		
+			height: 40px;
+			width: 120px;
+			background-color: #26C281;
+			border: 0px;
+			border-radius: 2px;
+			color: #fff;
+			
+	
+	}
+
+	
+	.select_form{
+			
+			display: flex;
+			justify-content: space-around;
+			margin-top: 40px;
+		}
+
+
+
+.row {
+    display: -ms-flexbox; /* IE 10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE 10 */
+    flex-wrap: wrap;
+    padding: 0 4px;
+    width: 70%;
+    margin: auto;
+    margin-top: 4%;
+}
+
+/* Create two equal columns that sits next to each other */
+.column{
+    -ms-flex: 50%; /* IE 10 */
+    flex: 50%;
+    padding: 0 4px;
+}
+
+.column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    height: 300px;
+    width: 300px;
+
+}
+
+/* Style the buttons */
+.btn {
+    border: none;
+    outline: none;
+    padding: 10px 16px;
+    background-color: #f1f1f1;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.btn:hover {
+    background-color: #ddd;
+}
+
+.btn.active {
+    background-color: #666;
+    color: white;
+}
+</style>
+<!-- Header -->
+<!-- <div class="header" id="myHeader">
+  <h1>Image Grid</h1>
+  <p>Click on the buttons to change the grid view.</p>
+  <button class="btn" onclick="one()">1</button>
+  <button class="btn active" onclick="two()">2</button>
+  <button class="btn" onclick="four()">3</button>
+</div> -->
+
+<!-- Photo Grid -->
+<div class="row" > 
+  <div class="column">
+    <img src="images123/1.jpg" style="width:100%">
+    <img src="images123/2.jpg" style="width:100%">
+    <img src="images123/3.jpg" style="width:100%">
+    <img src="images123/4.jpg" style="width:100%">
+    <img src="images123/5.jpg" style="width:100%">
+    <img src="images123/6.jpg" style="width:100%">
+    <img src="images123/7.jpg" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="images123/8.jpg" style="width:100%">
+    <img src="images123/9.jpg" style="width:100%">
+    <img src="images123/10.jpg" style="width:100%">
+    <img src="images123/11.jpg" style="width:100%">
+    <img src="images123/18.jpg" style="width:100%">
+    <img src="images123/12.jpg" style="width:100%">
+  </div>  
+  <div class="column">
+    <img src="images123/14.jpg" style="width:100%">
+    <img src="images123/2.jpg" style="width:100%">
+    <img src="images123/16.jpg" style="width:100%">
+    <img src="images123/1.jpg" style="width:100%">
+    <img src="images123/18.jpg" style="width:100%">
+    <img src="images123/19.jpg" style="width:100%">
+    <img src="images123/20.jpg" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="images123/21.jpg" style="width:100%">
+    <img src="images123/22.jpg" style="width:100%">
+    <img src="images123/1.jpg" style="width:100%">
+    <img src="images123/23.jpg" style="width:100%">
+    <img src="images123/8.jpg" style="width:100%">
+    <img src="images123/16.jpg" style="width:100%">
+  </div>
+</div>
+
+<script>
+function openjaipur() {
+window.open("jaipur.html");
+}
+// Get the elements with class="column"
+var elements = document.getElementsByClassName("column");
+
+// Declare a loop variable
+var i;
+
+// Full-width images
+function one() {
+    for (i = 0; i < elements.length; i++) {
+        elements[i].style.msFlex = "100%";  // IE10
+        elements[i].style.flex = "100%";
+    }
+}
+
+// Two images side by side
+function two() {
+    for (i = 0; i < elements.length; i++) {
+        elements[i].style.msFlex = "50%";  // IE10
+        elements[i].style.flex = "50%";
+    }
+}
+
+// Four images side by side
+function four() {
+    for (i = 0; i < elements.length; i++) {
+        elements[i].style.msFlex = "25%";  // IE10
+        elements[i].style.flex = "25%";
+    }
+}
+
+// Add active class to the current button (highlight it)
+var header = document.getElementById("myHeader");
+var btns = header.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function() {
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+</script>
+
+
+
+</body>
+</html>

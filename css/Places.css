@@ -1,0 +1,114 @@
+body
+{
+	background-color: #212529
+}
+
+.container
+{
+	width: 60%;
+	align-self: center;
+	margin: auto;
+	margin-left: 20%
+}
+
+.head
+{
+	background-color: #26C281;
+	height: 5%;
+	margin: 0;
+	width: 100%;
+	color: #fff;
+}
+
+.head h1
+{
+	margin: 0 auto;
+	padding: 5px;
+	font: all;
+}
+
+form
+{
+	align-self: center;
+	margin-top: 10px;
+}
+
+form .city
+{
+	height: 30px;
+	width: 60%;
+	align-self: center;
+	margin-left: auto;
+	margin-top: 10px;
+}
+
+
+.submit
+{
+	display: inline-block;
+	height: 38px;
+	background-color: #26C281;
+	border: none;
+	width: 15%;
+	border-radius: 3px;
+	margin: auto;
+	color: #fff;
+
+}
+
+form input[type=text]
+{
+	margin: 2px;
+	padding: 12px;
+}
+
+.city
+{
+	align-self: center;
+	margin: auto;
+}
+
+td
+{
+	background-color: #26C281;
+	width: 300px;
+	padding:10px;
+	border-radius: 5px;
+	
+}
+
+img
+{
+	width: auto;
+	height: 250px;
+	margin: 10px;
+}
+
+td img:hover
+{
+	width: auto;
+	height: 250px;
+	margin: 10px;
+	opacity: 0.6;
+}
+
+table 
+{
+	align-self: center;
+	border-spacing: 40px;
+	margin: auto;
+	margin-top: 30px;
+
+}
+
+tr
+{
+	margin: 10px;
+}
+
+table h1,p
+{
+	font-family: sans-serif;
+	color: #212529;
+	padding:10px;
+}
